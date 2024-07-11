@@ -19,7 +19,7 @@ class QrCode extends \Payrexx\Models\Request\QrCode
     /**
      * @param string $png
      */
-    public function setPng($png): void
+    public function setPng($png)
     {
         $this->png = $png;
     }
@@ -35,7 +35,7 @@ class QrCode extends \Payrexx\Models\Request\QrCode
     /**
      * @param string $svg
      */
-    public function setSvg($svg): void
+    public function setSvg($svg)
     {
         $this->svg = $svg;
     }
@@ -51,7 +51,7 @@ class QrCode extends \Payrexx\Models\Request\QrCode
     /**
      * @return string
      */
-    public function getQrCode(): string
+    public function getQrCode()
     {
         return $this->qrCode;
     }
@@ -59,7 +59,7 @@ class QrCode extends \Payrexx\Models\Request\QrCode
     /**
      * @param string $qrCode
      */
-    public function setQrCode(string $qrCode): void
+    public function setQrCode($qrCode)
     {
         $this->qrCode = $qrCode;
     }

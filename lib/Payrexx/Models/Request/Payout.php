@@ -6,18 +6,18 @@ use Payrexx\Models\Base;
 
 class Payout extends Base
 {
-    protected string $currency;
+    protected $currency;
 
-    protected int $amount;
+    protected $amount;
 
-    protected int $pspId;
+    protected $pspId;
 
-    protected ?string $statementDescriptor;
+    protected $statementDescriptor;
 
     /**
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency()
     {
         return $this->currency;
     }
@@ -25,7 +25,7 @@ class Payout extends Base
     /**
      * @param string $currency
      */
-    public function setCurrency(string $currency): void
+    public function setCurrency($currency)
     {
         $this->currency = $currency;
     }
@@ -33,7 +33,7 @@ class Payout extends Base
     /**
      * @return int
      */
-    public function getAmount(): int
+    public function getAmount()
     {
         return $this->amount;
     }
@@ -41,7 +41,7 @@ class Payout extends Base
     /**
      * @param int $amount
      */
-    public function setAmount(int $amount): void
+    public function setAmount($amount)
     {
         $this->amount = $amount;
     }
@@ -49,7 +49,7 @@ class Payout extends Base
     /**
      * @return int
      */
-    public function getPspId(): int
+    public function getPspId()
     {
         return $this->pspId;
     }
@@ -57,7 +57,7 @@ class Payout extends Base
     /**
      * @param int $pspId
      */
-    public function setPspId(int $pspId): void
+    public function setPspId($pspId)
     {
         $this->pspId = $pspId;
     }
@@ -65,7 +65,7 @@ class Payout extends Base
     /**
      * @return string|null
      */
-    public function getStatementDescriptor(): ?string
+    public function getStatementDescriptor()
     {
         return $this->statementDescriptor;
     }
@@ -73,12 +73,15 @@ class Payout extends Base
     /**
      * @param string|null $statementDescriptor
      */
-    public function setStatementDescriptor(?string $statementDescriptor): void
+    public function setStatementDescriptor($statementDescriptor)
     {
         $this->statementDescriptor = $statementDescriptor;
     }
 
-    public function getResponseModel(): \Payrexx\Models\Response\Payout
+    /**
+     * @return \Payrexx\Models\Response\Payout
+     */
+    public function getResponseModel()
     {
         return new \Payrexx\Models\Response\Payout();
     }

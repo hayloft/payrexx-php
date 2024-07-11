@@ -30,7 +30,7 @@ class PaymentMethod extends \Payrexx\Models\Request\PaymentMethod
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName()
     {
         return $this->name;
     }
@@ -38,7 +38,7 @@ class PaymentMethod extends \Payrexx\Models\Request\PaymentMethod
     /**
      * @param string $name
      */
-    public function setName(string $name): void
+    public function setName($name)
     {
         $this->name = $name;
     }
@@ -46,7 +46,7 @@ class PaymentMethod extends \Payrexx\Models\Request\PaymentMethod
     /**
      * @return array
      */
-    public function getLabel(): array
+    public function getLabel()
     {
         return $this->label;
     }
@@ -54,7 +54,7 @@ class PaymentMethod extends \Payrexx\Models\Request\PaymentMethod
     /**
      * @param array $label
      */
-    public function setLabel(array $label): void
+    public function setLabel(array $label)
     {
         $this->label = $label;
     }
@@ -62,7 +62,7 @@ class PaymentMethod extends \Payrexx\Models\Request\PaymentMethod
     /**
      * @return array
      */
-    public function getLogo(): array
+    public function getLogo()
     {
         return $this->logo;
     }
@@ -70,7 +70,7 @@ class PaymentMethod extends \Payrexx\Models\Request\PaymentMethod
     /**
      * @param array $logo
      */
-    public function setLogo(array $logo): void
+    public function setLogo(array $logo)
     {
         $this->logo = $logo;
     }
@@ -78,7 +78,7 @@ class PaymentMethod extends \Payrexx\Models\Request\PaymentMethod
     /**
      * @return array
      */
-    public function getoptions_by_psp(): array
+    public function getoptions_by_psp()
     {
         return $this->options_by_psp;
     }
@@ -86,7 +86,7 @@ class PaymentMethod extends \Payrexx\Models\Request\PaymentMethod
     /**
      * @param array $options_by_psp
      */
-    public function setoptions_by_psp(array $options_by_psp): void
+    public function setoptions_by_psp(array $options_by_psp)
     {
         $this->options_by_psp = $options_by_psp;
     }

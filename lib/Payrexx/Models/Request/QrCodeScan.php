@@ -23,7 +23,7 @@ class QrCodeScan extends \Payrexx\Models\Base
      * @access  public
      * @return  string
      */
-    public function getSessionId(): string
+    public function getSessionId()
     {
         return $this->sessionId;
     }
@@ -33,7 +33,7 @@ class QrCodeScan extends \Payrexx\Models\Base
      * @param   string   $sessionId
      * @return  void
      */
-    public function setSessionId(string $sessionId): void
+    public function setSessionId($sessionId)
     {
         $this->sessionId = $sessionId;
     }

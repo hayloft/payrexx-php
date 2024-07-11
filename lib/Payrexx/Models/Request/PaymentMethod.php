@@ -27,7 +27,7 @@ class PaymentMethod extends \Payrexx\Models\Base
     /**
      * @return string
      */
-    public function getFilterCurrency(): string
+    public function getFilterCurrency()
     {
         return $this->filterCurrency;
     }
@@ -35,7 +35,7 @@ class PaymentMethod extends \Payrexx\Models\Base
     /**
      * @param string $filterCurrency
      */
-    public function setFilterCurrency(string $filterCurrency): void
+    public function setFilterCurrency($filterCurrency)
     {
         $this->filterCurrency = $filterCurrency;
     }
@@ -43,7 +43,7 @@ class PaymentMethod extends \Payrexx\Models\Base
     /**
      * @return string
      */
-    public function getFilterPaymentType(): string
+    public function getFilterPaymentType()
     {
         return $this->filterPaymentType;
     }
@@ -51,7 +51,7 @@ class PaymentMethod extends \Payrexx\Models\Base
     /**
      * @param string $filterPaymentType
      */
-    public function setFilterPaymentType(string $filterPaymentType): void
+    public function setFilterPaymentType($filterPaymentType)
     {
         $this->filterPaymentType = $filterPaymentType;
     }
@@ -59,7 +59,7 @@ class PaymentMethod extends \Payrexx\Models\Base
     /**
      * @return int
      */
-    public function getFilterPsp(): int
+    public function getFilterPsp()
     {
         return $this->filterPsp;
     }
@@ -67,7 +67,7 @@ class PaymentMethod extends \Payrexx\Models\Base
     /**
      * @param int $filterPsp
      */
-    public function setFilterPsp(int $filterPsp): void
+    public function setFilterPsp($filterPsp)
     {
         $this->filterPsp = $filterPsp;
     }

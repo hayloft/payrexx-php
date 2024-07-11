@@ -44,7 +44,7 @@ class Payrexx
      * This method passes header to the request.
      * The format of the elements needs to be like this: 'Content-type: multipart/form-data'
      */
-    public function setHttpHeaders(array $header): void
+    public function setHttpHeaders(array $header)
     {
         $this->communicator->httpHeaders = $header;
     }
@@ -66,7 +66,7 @@ class Payrexx
      * @param string $method The name of the method called.
      * @param array  $args   The arguments passed to the method call. There can only be one argument which is the model.
      *
-     * @return \Payrexx\Models\Response\Base[]|\Payrexx\Models\Response\Base
+     * @return \Payrexx\Models\Base[]|\Payrexx\Models\Base
      * @throws \Payrexx\PayrexxException The model argument is missing or the method is not implemented
      */
     public function __call($method, $args)

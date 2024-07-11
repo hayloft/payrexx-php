@@ -54,7 +54,7 @@ class Transaction extends \Payrexx\Models\Base
     /**
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency()
     {
         return $this->currency;
     }
@@ -62,7 +62,7 @@ class Transaction extends \Payrexx\Models\Base
     /**
      * @param string $currency
      */
-    public function setCurrency(string $currency): void
+    public function setCurrency($currency)
     {
         $this->currency = $currency;
     }
@@ -86,7 +86,7 @@ class Transaction extends \Payrexx\Models\Base
     /**
      * @return float|null
      */
-    public function getVatRate(): ?float
+    public function getVatRate()
     {
         return $this->vatRate;
     }
@@ -94,7 +94,7 @@ class Transaction extends \Payrexx\Models\Base
     /**
      * @param float $vatRate
      */
-    public function setVatRate(float $vatRate): void
+    public function setVatRate($vatRate)
     {
         $this->vatRate = $vatRate;
     }
@@ -102,9 +102,9 @@ class Transaction extends \Payrexx\Models\Base
     /**
      * @return array
      */
-    public function getFields(): array
+    public function getFields()
     {
-        return $this->fields ?? [];
+        return isset($this->fields) ? $this->fields : [];
     }
 
     /**
@@ -113,7 +113,7 @@ class Transaction extends \Payrexx\Models\Base
      * @param array $name
      * @return void
      */
-    public function addField(string $type, string $value, array $name = []): void
+    public function addField($type, $value, array $name = [])
     {
         $this->fields[$type] = [
             'value' => $value,
@@ -164,7 +164,7 @@ class Transaction extends \Payrexx\Models\Base
     /**
      * @param \DateTime $filterDatetimeUtcGreaterThan
      */
-    public function setFilterDatetimeUtcGreaterThan(\DateTime $filterDatetimeUtcGreaterThan): void
+    public function setFilterDatetimeUtcGreaterThan(\DateTime $filterDatetimeUtcGreaterThan)
     {
         $this->filterDatetimeUtcGreaterThan = $filterDatetimeUtcGreaterThan->setTimezone(new \DateTimeZone('UTC'))->format('Y-m-d H:i:s');
     }
@@ -180,7 +180,7 @@ class Transaction extends \Payrexx\Models\Base
     /**
      * @param \DateTime $filterDatetimeUtcLessThan
      */
-    public function setFilterDatetimeUtcLessThan(\DateTime $filterDatetimeUtcLessThan): void
+    public function setFilterDatetimeUtcLessThan(\DateTime $filterDatetimeUtcLessThan)
     {
         $this->filterDatetimeUtcLessThan = $filterDatetimeUtcLessThan->setTimezone(new \DateTimeZone('UTC'))->format('Y-m-d H:i:s');
     }
@@ -188,7 +188,7 @@ class Transaction extends \Payrexx\Models\Base
     /**
      * @return bool
      */
-    public function getFilterMyTransactionsOnly(): bool
+    public function getFilterMyTransactionsOnly()
     {
         return $this->filterMyTransactionsOnly;
     }
@@ -196,7 +196,7 @@ class Transaction extends \Payrexx\Models\Base
     /**
      * @param bool $filterMyTransactionsOnly
      */
-    public function setFilterMyTransactionsOnly(bool $filterMyTransactionsOnly): void
+    public function setFilterMyTransactionsOnly($filterMyTransactionsOnly)
     {
         $this->filterMyTransactionsOnly = $filterMyTransactionsOnly;
     }
@@ -212,7 +212,7 @@ class Transaction extends \Payrexx\Models\Base
     /**
      * @param int $offset
      */
-    public function setOffset(int $offset): void
+    public function setOffset($offset)
     {
         $this->offset = $offset;
     }
@@ -228,7 +228,7 @@ class Transaction extends \Payrexx\Models\Base
     /**
      * @param int $limit
      */
-    public function setLimit(int $limit): void
+    public function setLimit($limit)
     {
         $this->limit = $limit;
     }

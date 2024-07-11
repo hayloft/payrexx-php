@@ -54,7 +54,7 @@ abstract class Base
     /**
      * Returns the corresponding response model object
      *
-     * @return \Payrexx\Models\Response\Base
+     * @return \Payrexx\Models\Base
      */
     public abstract function getResponseModel();
 

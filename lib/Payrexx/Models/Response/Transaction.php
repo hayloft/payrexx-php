@@ -246,7 +246,7 @@ class Transaction extends \Payrexx\Models\Request\Transaction
     /**
      * @param int $payrexxFee
      */
-    public function setPayrexxFee(int $payrexxFee)
+    public function setPayrexxFee($payrexxFee)
     {
         $this->payrexxFee = $payrexxFee;
     }
@@ -262,7 +262,7 @@ class Transaction extends \Payrexx\Models\Request\Transaction
     /**
      * @param int $fee
      */
-    public function setFee(int $fee)
+    public function setFee($fee)
     {
         $this->fee = $fee;
     }

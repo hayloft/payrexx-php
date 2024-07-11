@@ -6,36 +6,36 @@ class Payout extends \Payrexx\Models\Request\Payout
 {
 
     /** @var string */
-    protected string $object = '';
+    protected $object = '';
 
     /** @var int */
-    protected int $amount = 0;
+    protected $amount = 0;
 
     /** @var float */
-    protected float $totalFees = 0;
+    protected $totalFees = 0;
 
     /** @var ?string */
-    protected ?string $date = '';
+    protected $date = '';
 
     /** @var ?string */
-    protected ?string $statement = '';
+    protected $statement = '';
 
     /** @var ?string */
-    protected ?string $status = '';
+    protected $status = '';
 
     /** @var ?array */
-    protected ?array $destination = [];
+    protected $destination = [];
 
     /** @var ?array */
-    protected ?array $transfers = [];
+    protected $transfers = [];
 
     /** @var ?array */
-    protected ?array $merchant = [];
+    protected $merchant = [];
 
     /**
      * @return string
      */
-    public function getObject(): string
+    public function getObject()
     {
         return $this->object;
     }
@@ -43,7 +43,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @param string $object
      */
-    public function setObject(string $object): void
+    public function setObject($object)
     {
         $this->object = $object;
     }
@@ -51,7 +51,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @return float
      */
-    public function getTotalFees(): float
+    public function getTotalFees()
     {
         return $this->totalFees;
     }
@@ -59,7 +59,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @param float $totalFees
      */
-    public function setTotalFees(float $totalFees): void
+    public function setTotalFees($totalFees)
     {
         $this->totalFees = $totalFees;
     }
@@ -67,7 +67,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @return ?string
      */
-    public function getDate(): ?string
+    public function getDate()
     {
         return $this->date;
     }
@@ -75,7 +75,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @param ?string $date
      */
-    public function setDate(?string $date): void
+    public function setDate($date)
     {
         $this->date = $date;
     }
@@ -83,7 +83,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @return ?string
      */
-    public function getStatement(): ?string
+    public function getStatement()
     {
         return $this->statement;
     }
@@ -91,7 +91,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @param ?string $statement
      */
-    public function setStatement(?string $statement): void
+    public function setStatement($statement)
     {
         $this->statement = $statement;
     }
@@ -99,7 +99,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @return ?string
      */
-    public function getStatus(): ?string
+    public function getStatus()
     {
         return $this->status;
     }
@@ -107,7 +107,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @param ?string $status
      */
-    public function setStatus(?string $status): void
+    public function setStatus($status)
     {
         $this->status = $status;
     }
@@ -115,7 +115,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @return ?array
      */
-    public function getDestination(): ?array
+    public function getDestination()
     {
         return $this->destination;
     }
@@ -123,7 +123,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @param ?array $destination
      */
-    public function setDestination(?array $destination): void
+    public function setDestination($destination)
     {
         $this->destination = $destination;
     }
@@ -131,7 +131,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @return ?array
      */
-    public function getTransfers(): ?array
+    public function getTransfers()
     {
         return $this->transfers;
     }
@@ -139,7 +139,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @param ?array $transfers
      */
-    public function setTransfers(?array $transfers): void
+    public function setTransfers($transfers)
     {
         $this->transfers = $transfers;
     }
@@ -147,7 +147,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @return array
      */
-    public function getMerchant(): array
+    public function getMerchant()
     {
         return $this->merchant;
     }
@@ -155,7 +155,7 @@ class Payout extends \Payrexx\Models\Request\Payout
     /**
      * @param ?array $merchant
      */
-    public function setMerchant(?array $merchant): void
+    public function setMerchant($merchant)
     {
         $this->merchant = $merchant;
     }

@@ -123,7 +123,7 @@ class Gateway extends \Payrexx\Models\Request\Gateway
     /**
      * @return integer|null
      */
-    public function getTransactionId(): ?int
+    public function getTransactionId()
     {
         return $this->transactionId;
     }
@@ -131,7 +131,7 @@ class Gateway extends \Payrexx\Models\Request\Gateway
     /**
      * @param integer $transactionId
      */
-    public function setTransactionId(int $transactionId): void
+    public function setTransactionId($transactionId)
     {
         $this->transactionId = $transactionId;
     }
@@ -139,7 +139,7 @@ class Gateway extends \Payrexx\Models\Request\Gateway
     /**
      * @return string|null
      */
-    public function getAppLink(): ?string
+    public function getAppLink()
     {
         return $this->appLink;
     }
@@ -147,7 +147,7 @@ class Gateway extends \Payrexx\Models\Request\Gateway
     /**
      * @param string $appLink
      */
-    public function setAppLink(string $appLink): void
+    public function setAppLink($appLink)
     {
         $this->appLink = $appLink;
     }

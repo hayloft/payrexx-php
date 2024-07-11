@@ -29,7 +29,7 @@ class QrCode extends \Payrexx\Models\Base
      * @access  public
      * @return  string
      */
-    public function getWebshopUrl(): string
+    public function getWebshopUrl()
     {
         return $this->webshopUrl;
     }
@@ -39,7 +39,7 @@ class QrCode extends \Payrexx\Models\Base
      * @param   string   $webshopUrl
      * @return  void
      */
-    public function setWebshopUrl(string $webshopUrl): void
+    public function setWebshopUrl($webshopUrl)
     {
         $this->webshopUrl = $webshopUrl;
     }
@@ -55,7 +55,7 @@ class QrCode extends \Payrexx\Models\Base
     /**
      * @return string
      */
-    public function getUuid(): string
+    public function getUuid()
     {
         return $this->uuid;
     }
@@ -63,7 +63,7 @@ class QrCode extends \Payrexx\Models\Base
     /**
      * @param string $uuid
      */
-    public function setUuid($uuid): void
+    public function setUuid($uuid)
     {
         $this->uuid = $uuid;
     }
